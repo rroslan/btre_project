@@ -19,10 +19,11 @@ ALLOWED_HOSTS = ['survey-info-237814.appspot.com',
                  '127.0.0.1']
 
 
-
+CORS_ORIGIN_REGEX_WHITELIST = (r'^(https?://)?(\w+\.)?googleapis\.com$', )
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'pages.apps.PagesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -133,7 +134,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'btre/static'),
 ]
