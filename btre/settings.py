@@ -21,6 +21,8 @@ SECRET_KEY = '2y#1xy27s95c6rs%iypp+$h0#p&mv$h&gdlsty!*a&p@siy19='
 INSTALLED_APPS = [
     'corsheaders',
     'pages.apps.PagesConfig',
+    'listings.apps.ListingsConfig',
+    'realtors.apps.RealtorsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
